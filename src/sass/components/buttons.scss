@@ -7,6 +7,9 @@
     border-radius: $radius;
     cursor: pointer;
     text-decoration: none;
+    font-size: 1rem;
+    font-weight: 600;
+    display: inline-block;
     @each $color, $value in $colors {
         &.fw-#{$color} {
             @if $color == 'white' or $color == 'white-ter' {
@@ -16,10 +19,10 @@
             }
             background-color: $value;
             &:hover {
-                background-color: darken($value, 5%);
+                background-color: darken($value, 10%);
             }
             &:focus {
-                background-color: darken($value, 10%);
+                background-color: darken($value, 15%);
             }
         }
     }

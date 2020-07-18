@@ -3,7 +3,7 @@
     @each $value in $list {
         $string: $string + $value;
         @if index($list, $value) != length($list) {
-            $string: $string + ',';
+            $string: $string + ';';
         }
     }
     @return $string;
