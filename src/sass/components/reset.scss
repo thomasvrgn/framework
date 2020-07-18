@@ -1,0 +1,10 @@
+@import '../functions/join.scss';
+@import '../config/variables.scss';
+
+@import url('https://fonts.googleapis.com/css2?family=#{$font-family}:wght@#{join($font-weights)}&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: $font-family, $font-style;
+}
