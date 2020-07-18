@@ -1,7 +1,7 @@
 @function join ($list) {
     $string: '';
     @each $value in $list {
-        $string: str-insert($string, quote($value), 10000000000);
+        $string: $string + $value;
         @if index($list, $value) != length($list) {
             $string: $string + ',';
         }

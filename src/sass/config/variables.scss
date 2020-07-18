@@ -1,3 +1,18 @@
 $font-family  : 'Monserrat';
 $font-weights : 100, 200, 300, 400, 500, 600, 700, 800, 900;
 $font-style   : sans-serif;
+
+$radius: 2.5px;
+
+$colors       : (
+    'white'       : hsl(0, 0%, 100%),
+    'black'       : hsl(0, 0%, 4%),
+    'white-ter'   : hsl(0, 0%, 96%),
+    'grey-darker' : hsl(0, 0%, 21%),
+    'turquoise'   : hsl(171, 100%, 41%),
+    'blue'        : hsl(217, 71%, 53%),
+    'cyan'        : hsl(204, 86%, 53%),
+    'green'       : hsl(141, 53%, 53%),
+    'yellow'	  : hsl(48, 100%, 67%),
+    'red'         : hsl(348, 100%, 61%)
+);
