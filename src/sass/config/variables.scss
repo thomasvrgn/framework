@@ -26,5 +26,12 @@ $padding-number : 9;
 $units          : (
     'x': ('left', 'right'),
     'y': ('top', 'bottom'),
+    't': ('top'),
+    'b': ('bottom'),
+    'l': ('left'),
+    'r': ('right'),
     '':  ('left', 'right', 'top', 'bottom')  
 );
+
+$width  : 8;
+$height : 8;

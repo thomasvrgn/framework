@@ -1,0 +1,7 @@
+@import '../config/variables.scss';
+
+@for $i from 0 through $width {
+  .fw-h#{$i} {
+    height: $i * 100vh / $width;
+  }
+}

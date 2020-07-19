@@ -1,0 +1,7 @@
+@import '../config/variables.scss';
+
+@for $i from 0 through $width {
+  .fw-w#{$i} {
+    width: $i * 100% / $width;
+  }
+}
