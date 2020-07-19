@@ -9,6 +9,6 @@
   font-weight: middle_item($font-weights);
 }
 
-.fw-bold {
+.fw-bold, strong, b {
   font-weight: last($font-weights);
 }

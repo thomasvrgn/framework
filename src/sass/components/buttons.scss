@@ -22,10 +22,10 @@
             }
             background-color: $value;
             &:hover {
-                background-color: darken($value, 10%);
+                background-color: darken($value, 5%);
             }
             &:focus {
-                background-color: darken($value, 15%);
+                background-color: darken($value, 10%);
             }
         }
     }
