@@ -1,3 +1,7 @@
+/*/////////////////////////
+         Framework
+           Joins
+/////////////////////////*/
 @function join ($list) {
     $string: '';
     @each $value in $list {

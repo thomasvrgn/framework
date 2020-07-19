@@ -1,3 +1,8 @@
+/*/////////////////////////
+         Framework
+           Slice
+/////////////////////////*/
+
 @function slice ($list, $start, $end: length($list)) {
   $result: ();
   $j: 0;
