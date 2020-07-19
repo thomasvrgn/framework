@@ -1,2 +1,14 @@
 @import '../config/variables.scss';
-@import '../functions/middle.scss';
+@import '../functions/list.scss';
+
+.fw-light {
+  font-weight: first($font-weights);
+}
+
+.fw-normal {
+  font-weight: middle_item($font-weights);
+}
+
+.fw-bold {
+  font-weight: last($font-weights);
+}

@@ -1,0 +1,19 @@
+@import 'slice.scss';
+
+@function middle ($list) {
+    @return floor(length($list) / 2);
+}
+
+@function middle_item ($list) {
+    @return nth($list, middle($list));
+}
+
+@function first ($list) {
+    $temp_list: slice($list, 0, middle($list));
+    @return middle_item($temp_list);
+}
+
+@function last ($list) {
+    $temp_list: slice($list, middle($list), length($list));
+    @return middle_item($temp_list);
+}

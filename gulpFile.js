@@ -20,7 +20,7 @@ gulp.task('sass:prefixer', function () {
 })
 
 gulp.task('sass:watch', function () {
-    gulp.watch(['./src/sass/**/*.scss', '!./src/sass/functions', '!./src/sass/config'], function () {
+    gulp.watch('./src/sass/**/*.scss', function () {
         gulp.series('sass:compile', 'sass:prefixer', 'sass:watch')()
     })
 }) 

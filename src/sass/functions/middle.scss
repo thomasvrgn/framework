@@ -1,3 +1,0 @@
-@function middle ($list) {
-    @return nth($list, floor(length($list) / 2));
-}

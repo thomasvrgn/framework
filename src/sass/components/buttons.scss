@@ -9,7 +9,8 @@
     text-decoration: none;
     font-size: 1rem;
     font-weight: 600;
-    display: inline-block;
+    display: block;
+    width: fit-content;
     @each $color, $value in $colors {
         &.fw-#{$color} {
             @if $color == 'white' or $color == 'white-ter' {

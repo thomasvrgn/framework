@@ -1,0 +1,9 @@
+@function slice ($list, $start, $end: length($list)) {
+  $result: ();
+  $j: 0;
+  @for $i from $start + 1 through $end {
+      $result: append($result, nth($list, $start + 1 + $j));
+      $j: $j + 1;
+  }
+  @return $result;
+}
