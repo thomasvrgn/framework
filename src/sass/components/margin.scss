@@ -1,0 +1,11 @@
+@import '../config/variables.scss';
+
+@for $i from 1 through $margin-number + 1 {
+  @each $unit, $value in $units {
+    .fw-m#{$unit}-#{$i} {
+      @each $direction in $value {
+        margin-#{$direction}: $margin-base;
+      }
+    }
+  }
+}

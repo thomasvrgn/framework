@@ -16,3 +16,15 @@ $colors       : (
     'yellow'	  : hsl(48, 100%, 67%),
     'red'         : hsl(348, 100%, 61%)
 );
+
+$margin-base    : 0.25rem;
+$margin-number  : 9;
+
+$padding-base   : 0.25rem;
+$padding-number : 9;
+
+$units          : (
+    'x': ('left', 'right'),
+    'y': ('top', 'bottom'),
+    '':  ('left', 'right', 'top', 'bottom')  
+);
