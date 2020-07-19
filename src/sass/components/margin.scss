@@ -4,7 +4,7 @@
   @each $unit, $value in $units {
     .fw-m#{$unit}-#{$i} {
       @each $direction in $value {
-        margin-#{$direction}: $margin-base;
+        margin-#{$direction}: $margin-base * $i;
       }
     }
   }
