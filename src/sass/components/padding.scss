@@ -1,0 +1,11 @@
+@import '../config/variables.scss';
+
+@for $i from 1 through $margin-number + 1 {
+  @each $unit, $value in $units {
+    .fw-p#{$unit}-#{$i} {
+      @each $direction in $value {
+        padding-#{$direction}: $padding-base;
+      }
+    }
+  }
+}
