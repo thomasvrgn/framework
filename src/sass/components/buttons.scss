@@ -11,6 +11,8 @@
     font-weight: 600;
     display: block;
     width: fit-content;
+    min-width: 50px;
+    text-align: center;
     @each $color, $value in $colors {
         &.fw-#{$color} {
             @if $color == 'white' or $color == 'white-ter' {
