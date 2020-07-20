@@ -3,17 +3,17 @@
           Weights      
 /////////////////////////*/
 
-@import '../config/variables.scss';
-@import '../functions/list.scss';
+@import '../../config/variables.scss';
+@import '../../functions/list.scss';
 
-.fw-light {
+.fw-font-light {
   font-weight: first($font-weights);
 }
 
-.fw-normal {
+.fw-font-normal {
   font-weight: middle_item($font-weights);
 }
 
-.fw-bold, strong, b {
+.fw-font-bold, strong, b {
   font-weight: last($font-weights);
 }

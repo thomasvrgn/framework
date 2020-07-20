@@ -17,9 +17,24 @@
     display: block;
     width: fit-content;
     min-width: 50px;
+    max-width: fit-content;
     text-align: center;
+
+    .fw-small {
+        padding: 0.5rem 2rem;
+    }
+
+    &.fw-medium {
+        padding: 0.75rem 3rem;
+    }
+
+    &.fw-large {
+        padding: 1rem 4rem;
+    }
+
     @each $color, $value in $colors {
         &.fw-#{$color} {
+            border: solid transparent 1px;
             @if $color == 'white' or $color == 'white-ter' {
                 color: map-get($colors, 'black');
             } @else {
@@ -31,6 +46,63 @@
             }
             &:focus {
                 background-color: darken($value, 10%);
+            }
+            &.fw-light {
+                $color: lighten($value, 40%);
+                background-color: $color;
+                color: $value;
+                &:hover {
+                    background-color: darken($color, 2.5%);
+                }
+                &:focus {
+                    background-color: darken($color, 5%);
+                }
+            }
+            &.fw-outlined {
+                background-color: transparent;
+                border: solid $value 1px;
+                color: $value;
+                font-weight: 400;
+                &:hover {
+                    background-color: $value;
+                    @if $color == 'white' or $color == 'white-ter' {
+                        color: map-get($colors, 'black');
+                    } @else {
+                        color: map-get($colors, 'white');
+                    }
+                }
+                &:focus {
+                    background-color: darken($value, 5%);
+                    @if $color == 'white' or $color == 'white-ter' {
+                        color: map-get($colors, 'black');
+                    } @else {
+                        color: map-get($colors, 'white');
+                    }
+                }
+            }
+            &.fw-inverted {
+                background-color: white;
+                color: $value;
+                &:hover {
+                    background-color: darken(white, 2.5%);
+                }
+                &:focus {
+                    background-color: darken(white, 5%);
+                }
+            }
+            &.fw-inverted.fw-outlined {
+                font-weight: 400;
+                background-color: transparent;
+                border: solid white 1px;
+                color: white;
+                &:hover {
+                    background-color: white;
+                    color: $value;
+                }
+                &:focus {
+                    background-color: darken(white, 2.5%);
+                    color: $value;
+                }
             }
         }
     }
